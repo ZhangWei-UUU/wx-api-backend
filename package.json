@@ -1,0 +1,29 @@
+{
+  "name": "ex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ZhangWei-UUU/backend.git",
+  "author": "ZhangWei <350095093@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "connect-mongo": "2.0.3",
+    "connect-mongodb-session": "2.0.6",
+    "cookie-parser": "1.4.3",
+    "cos-nodejs-sdk-v5": "2.5.6",
+    "express": "4.16.4",
+    "express-session": "1.15.6",
+    "hash.js": "1.1.7",
+    "jsonwebtoken": "8.4.0",
+    "mongodb": "3.1.10",
+    "multer": "1.4.1",
+    "nodemon": "1.18.9",
+    "request": "2.88.0",
+    "request-promise": "4.2.2"
+  },
+  "scripts": {
+    "dev": "export NODE_ENV=development && export DB_NAME=devkanseedb && export DB_PORT=27017 && export FILE_STORE=/Users/zhangwei/Desktop && nodemon index.js",
+    "build": "next build && export NODE_ENV=production && export DB_PORT=27017 && nodemon index.js",
+    "test": "jest",
+    "start": "export NODE_ENV=production && export DB_NAME=prodkanseedb &&  export DB_HOST=172.17.0.2 && export DB_PORT=27017 && export FILE_STORE=/home/ubuntu/images && nodemon index.js"
+  }
+}
