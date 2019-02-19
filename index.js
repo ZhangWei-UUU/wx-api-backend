@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.use(cookieParser());
 app.use('/',(req,res)=>{
-    res.send({success:true,message:"ping successfully"})
+    res.send({success:true,message:"ping   successfully"})
 })
 app.use('/logistic',logistic);
 app.use('/qrcode',qrcode);
